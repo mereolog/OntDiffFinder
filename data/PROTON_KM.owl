@@ -1,0 +1,156 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns="http://proton.semanticweb.org/2005/04/protonkm#"
+    xmlns:ptop="http://proton.semanticweb.org/2005/04/protont#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:psys="http://proton.semanticweb.org/2005/04/protons#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" > 
+  <rdf:Description rdf:about="http://proton.semanticweb.org/2005/04/protonkm#hasWeight">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>hasWeight</rdfs:label>
+    <rdfs:domain rdf:resource="http://proton.semanticweb.org/2005/04/protonkm#WeightedTerm"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://proton.semanticweb.org/2005/04/protonkm#hasRole">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>hasRole</rdfs:label>
+    <rdfs:domain rdf:resource="http://proton.semanticweb.org/2005/04/protonkm#UserProfile"/>
+    <rdfs:range rdf:resource="http://proton.semanticweb.org/2005/04/protont#Role"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://proton.semanticweb.org/2005/04/protonkm#hasEndOffset">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>hasEndOffset</rdfs:label>
+    <rdfs:domain rdf:resource="http://proton.semanticweb.org/2005/04/protonkm#Mention"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://proton.semanticweb.org/2005/04/protonkm#UserProfile">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>User Profile</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://proton.semanticweb.org/2005/04/protonkm#Profile"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://proton.semanticweb.org/2005/04/protonkm#hasCapabilities">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>hasCapabilities</rdfs:label>
+    <rdfs:domain rdf:resource="http://proton.semanticweb.org/2005/04/protonkm#Device"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://proton.semanticweb.org/2005/04/protonkm#hasStartOffset">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>hasStartOffset</rdfs:label>
+    <rdfs:domain rdf:resource="http://proton.semanticweb.org/2005/04/protonkm#Mention"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://proton.semanticweb.org/2005/04/protonkm#hasWeightedTerm">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>hasWeightedTerm</rdfs:label>
+    <rdfs:range rdf:resource="http://proton.semanticweb.org/2005/04/protonkm#WeightedTerm"/>
+    <rdfs:domain rdf:resource="http://proton.semanticweb.org/2005/04/protont#Topic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://proton.semanticweb.org/2005/04/protonkm#hasUserProfile">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>hasUserProfile</rdfs:label>
+    <rdfs:comment>a relation between an User and its Profile</rdfs:comment>
+    <rdfs:domain rdf:resource="http://proton.semanticweb.org/2005/04/protonkm#User"/>
+    <rdfs:range rdf:resource="http://proton.semanticweb.org/2005/04/protonkm#UserProfile"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://proton.semanticweb.org/2005/04/protonkm#isInterestedIn">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>isInterestedIn</rdfs:label>
+    <rdfs:domain rdf:resource="http://proton.semanticweb.org/2005/04/protonkm#InformationSpaceProfile"/>
+    <rdfs:domain rdf:resource="http://proton.semanticweb.org/2005/04/protonkm#UserProfile"/>
+    <rdfs:range rdf:resource="http://proton.semanticweb.org/2005/04/protont#Topic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://proton.semanticweb.org/2005/04/protonkm#WeightedTerm">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>WeightedTerm</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://proton.semanticweb.org/2005/04/protons#LexicalResource"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://proton.semanticweb.org/2005/04/protonkm#refersInstance">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>refersInstance</rdfs:label>
+    <rdfs:domain rdf:resource="http://proton.semanticweb.org/2005/04/protonkm#Mention"/>
+    <rdfs:range rdf:resource="http://proton.semanticweb.org/2005/04/protons#Entity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://proton.semanticweb.org/2005/04/protonkm#InformationSpace">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Information Space</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://proton.semanticweb.org/2005/04/protont#Agent"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://proton.semanticweb.org/2005/04/protonkm#hasISProfile">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>hasISProfile</rdfs:label>
+    <rdfs:comment>a relation between an Information Space and its Profile</rdfs:comment>
+    <rdfs:domain rdf:resource="http://proton.semanticweb.org/2005/04/protonkm#InformationSpace"/>
+    <rdfs:range rdf:resource="http://proton.semanticweb.org/2005/04/protonkm#InformationSpaceProfile"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://proton.semanticweb.org/2005/04/protonkm#Profile">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Profile</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://proton.semanticweb.org/2005/04/protont#InformationResource"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://proton.semanticweb.org/2005/04/protonkm#occursIn">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>occursIn</rdfs:label>
+    <rdfs:domain rdf:resource="http://proton.semanticweb.org/2005/04/protonkm#Mention"/>
+    <rdfs:range rdf:resource="http://proton.semanticweb.org/2005/04/protont#InformationResource"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://proton.semanticweb.org/2005/04/protonkm">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <rdfs:comment>PROTON Knowledge Management Ontology</rdfs:comment>
+    <owl:versionInfo>"0.1"</owl:versionInfo>
+    <owl:imports rdf:resource="http://proton.semanticweb.org/2005/04/protons"/>
+    <owl:imports rdf:resource="http://proton.semanticweb.org/2005/04/protont"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://proton.semanticweb.org/2005/04/protonkm#User">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>User</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://proton.semanticweb.org/2005/04/protont#Agent"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://proton.semanticweb.org/2005/04/protonkm#isCurrentlyInterestedIn">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>isCurrentlyInterestedIn</rdfs:label>
+    <rdfs:domain rdf:resource="http://proton.semanticweb.org/2005/04/protonkm#UserProfile"/>
+    <rdfs:range rdf:resource="http://proton.semanticweb.org/2005/04/protont#Topic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://proton.semanticweb.org/2005/04/protonkm#InformationSpaceProfile">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Information Space Profile</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://proton.semanticweb.org/2005/04/protonkm#Profile"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://proton.semanticweb.org/2005/04/protonkm#Device">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Device</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://proton.semanticweb.org/2005/04/protont#Product"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://proton.semanticweb.org/2005/04/protonkm#SoftwareAgent">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Software Agent</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://proton.semanticweb.org/2005/04/protont#Agent"/>
+    <rdfs:comment>An artificial agent which operates in a software environment.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://proton.semanticweb.org/2005/04/protonkm#hasDevice">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>hasDevice</rdfs:label>
+    <rdfs:range rdf:resource="http://proton.semanticweb.org/2005/04/protonkm#Device"/>
+    <rdfs:domain rdf:resource="http://proton.semanticweb.org/2005/04/protonkm#UserProfile"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://proton.semanticweb.org/2005/04/protonkm#hasString">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>hasString</rdfs:label>
+    <rdfs:domain rdf:resource="http://proton.semanticweb.org/2005/04/protonkm#Mention"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://proton.semanticweb.org/2005/04/protonkm#hasTerm">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>hasTerm</rdfs:label>
+    <rdfs:domain rdf:resource="http://proton.semanticweb.org/2005/04/protonkm#WeightedTerm"/>
+    <rdfs:range rdf:resource="http://proton.semanticweb.org/2005/04/protont#GeneralTerm"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://proton.semanticweb.org/2005/04/protonkm#Mention">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Mention</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://proton.semanticweb.org/2005/04/protons#LexicalResource"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://proton.semanticweb.org/2005/04/protonkm#hasLocation">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>hasLocation</rdfs:label>
+    <rdfs:domain rdf:resource="http://proton.semanticweb.org/2005/04/protonkm#UserProfile"/>
+    <rdfs:range rdf:resource="http://proton.semanticweb.org/2005/04/protont#Location"/>
+  </rdf:Description>
+</rdf:RDF>
